@@ -6,6 +6,7 @@
 | 파일 | 누가 만드나 | 언제 사용하나 |
 | --- | --- | --- |
 | `01_generate_messy_sample_files.py` | 이미 제공됨 | 매 트레이니 시작 전 폴더 초기화 |
+| `02_convert_guide_to_docx.py` | 이미 제공됨 | `실습_가이드.md` 수정 후 `.docx` 재생성 |
 | `credentials.json` | **진행자가 직접 발급** | 7단계 Google Docs 업로드용 |
 | `token.json` | 트레이니 첫 인증 시 자동 생성 | 다음 실행부터 자동 인증 |
 
@@ -19,6 +20,20 @@ python 01_generate_messy_sample_files.py
 ```
 
 이 명령으로 `재무팀/finance-practice/` 가 "지저분한 시작 상태"로 돌아간다.
+
+---
+
+## A-2. 가이드 워드 파일 재생성 (가이드 수정 후)
+
+`재무팀/실습_가이드.md` 를 편집한 뒤, 트레이니에게 배포할 워드 파일을 갱신하려면:
+
+```bash
+cd 재무팀/_준비
+python 02_convert_guide_to_docx.py
+```
+
+이 명령은 `재무팀/실습_가이드.docx` 를 새로 만들거나 덮어쓴다.
+트레이니에게는 `.md` 와 `.docx` 둘 중 편한 형태로 배포하면 된다.
 
 ---
 
