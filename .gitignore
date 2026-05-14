@@ -1,2 +1,10 @@
 .DS_Store
 **/.DS_Store
+
+# Google OAuth secrets (재무팀 _준비/)
+**/credentials.json
+**/token.json
+
+# Python artefacts
+**/__pycache__/
+**/.venv/
